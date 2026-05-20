@@ -1,0 +1,147 @@
+/* Fonts */
+
+.pc-bottom {
+  font-family: Kumbh Sans;
+  color: #2e3349;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.name span {
+  font-weight: 300;
+  color: #6b7082;
+  margin-left: 4px;
+}
+
+.london {
+  font-weight: 300;
+  color: #6b7082;
+  margin-top: -3px;
+}
+
+.numbers {
+  font-weight: bold;
+}
+
+.small-spaced {
+  font-size: 10px;
+  color: #6b7082;
+  line-height: 125%;
+  letter-spacing: 1.5px;
+  margin-top: -6px;
+}
+
+/* Main CSS */
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background-color: #19a1ae;
+}
+
+.root-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-bg-image,
+.bottom-bg-image {
+  position: absolute;
+  z-index: 0;
+}
+
+.top-bg-image {
+  top: -100px;
+  left: -450px;
+  transform: translate(-35%, -50%);
+}
+
+.bottom-bg-image {
+  bottom: -100px;
+  right: -450px;
+  transform: translate(30%, 55%);
+}
+
+.profile-card {
+  /* border: 2px solid red; */
+  width: 326px;
+  max-width: 90%;
+  position: relative;
+  background-color: white;
+  border-radius: 7px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.pc-top {
+  margin: 0;
+  padding: 0;
+  background-color: #17a0ad;
+}
+
+.pc-top img {
+  width: 100%;
+  display: block;
+}
+
+.pc-picture {
+  /* border: 2px solid maroon; */
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  top: -50px;
+}
+
+.pc-picture img {
+  display: block;
+  border-radius: 50%;
+  border: 4px solid white;
+}
+
+.pc-bottom {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.pc-details {
+  text-align: center;
+  margin-top: -50px;
+}
+
+.pc-social-media-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .top-bg-image,
+  .bottom-bg-image {
+    position: absolute;
+    z-index: 0;
+  }
+
+  .top-bg-image {
+    top: 0;
+    left: 0;
+    transform: translate(-35%, -50%);
+  }
+
+  .bottom-bg-image {
+    bottom: 0;
+    right: 0;
+    transform: translate(30%, 55%);
+  }
+}
